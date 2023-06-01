@@ -19,7 +19,7 @@ Text Domain: pms plugin
 
 defined('ABSPATH') or die("Caught you hacker");
 
-//Require once the Composer Autoload
+
 if(file_exists(dirname(__FILE__).'/vendor/autoload.php')){
     require_once dirname(__FILE__).'/vendor/autoload.php';
 }
@@ -27,8 +27,7 @@ if(file_exists(dirname(__FILE__).'/vendor/autoload.php')){
 use Inc\Base;
 function activate_portfolio_plugin(){
     Base\Activate::activate();
-    // $create_table = new \Inc\Pages\CreateTable();
-    // $create_table->register();
+ 
 }
 register_activation_hook(__FILE__, 'activate_portfolio_plugin');
 
