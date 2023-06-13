@@ -1,7 +1,7 @@
 <?php 
 
 //
-function pms_script_enqueue(){
+function portfolio_script_enqueue(){
     wp_enqueue_style('customstyle', get_template_directory_uri().'/custom/styles.css', [], '3.1.1', 'all');
     wp_enqueue_script('customjs', get_template_directory_uri(). '/custom/scripts.js',[], '1.0.0', true);
 
@@ -14,12 +14,12 @@ function pms_script_enqueue(){
     wp_enqueue_script ('jsbootstrap');
 }
 
-add_action('wp_enqueue_scripts', 'pms_script_enqueue');
+add_action('wp_enqueue_scripts', 'portfolio_script_enqueue');
 
 
 // ADDING MENUS - HEADER AND FOOTER
 
-function pms_setup(){
+function portfolio_setup(){
     add_theme_support('menus');
     register_nav_menu('primary', 'Primary Header');
     register_nav_menu('secondary', 'Footer Navigation');
@@ -30,4 +30,4 @@ if ( ! file_exists( get_template_directory() . '/class-wp-bootstrap-navwalker.ph
 } else {
     require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 }
-add_action('init','pms_setup');
+add_action('init','portfolio_setup');

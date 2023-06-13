@@ -14,24 +14,45 @@
 
 </head>
 
-<body>
+<body style="background-color:#F5F5F5">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light"
-        style="margin-top:-40px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);">
-        <a class="navbar-brand logo" href="#">Portfolio</a>
+        style="margin-top:-47px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); padding: 4px;">
+        <a class="navbar-brand logo" href="#" style="font-weight:700">PNK</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" style="padding:1rem;" id="navbarNav">
             <ul class="navbar-nav">
-               
-                    <li class="nav-item completed">
-                        <a class="nav-link completed-text" href="#">View
-                            Projects</a>
-                    </li>
+
+                <li>
+                    <a class="nav-link " href="#">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link " href="#">About Me</a>
+                </li>
+                <li>
+                    <a class="nav-link " href="#">My Services</a>
+                </li>
+                <li>
+                    <a class="nav-link " href="#">Projects</a>
+                </li>
             </ul>
         </div>
     </nav>
+    <style>
+        .nav-link {
+            color: black;
+            font-weight: 600;
+            border-radius: 5px;
+        }
+
+        .nav-link:hover {
+            background-color: #FF9B5D;
+            color: #FAFAFA;
+            border-radius: 5px;
+        }
+    </style>
