@@ -14,11 +14,11 @@
 
 </head>
 
-<body style="background-color:#F5F5F5">
+<body style="background-color:#010101;overflow-x:hidden;">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light"
-        style="margin-top:-47px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); padding: 4px;">
-        <a class="navbar-brand logo" href="#" style="font-weight:700">PNK</a>
+        style="margin-top:-40px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); z-index:1; padding: 4px;position:fixed;width:100%">
+        <a class="navbar-brand logo" href="#" style="font-weight:700;margin-left:2rem">Patrick Ngige</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,18 +29,21 @@
             <ul class="navbar-nav">
 
                 <li>
-                    <a class="nav-link " href="#">Home</a>
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li>
-                    <a class="nav-link " href="#">About Me</a>
+                    <a class="nav-link" href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a class="nav-link " href="#">My Services</a>
+                    <a class="nav-link" href="#my-services">My Services</a>
                 </li>
                 <li>
-                    <a class="nav-link " href="#">Projects</a>
+                    <a class="nav-link" href="#projects">Projects</a>
                 </li>
-            </ul>
+                <li>
+                    <a class="nav-link" href="#contact-me">Contact Me</a>
+                </li>
+                </ul>
         </div>
     </nav>
     <style>
