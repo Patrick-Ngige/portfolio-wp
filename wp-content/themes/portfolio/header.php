@@ -17,8 +17,8 @@
 <body style="overflow-x:hidden;">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light"
-        style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); z-index:1; padding: 3px;position:fixed;width:100%">
-        <a class="navbar-brand logo" href="#" style="font-weight:700;margin-left:2rem">Patrick Ngige</a>
+        style="z-index:1; padding: 3px;position:fixed;width:100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);top: 0px">
+        <a class="navbar-brand logo" href="#home" style="font-weight:700;margin-left:2rem">Patrick Ngige</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

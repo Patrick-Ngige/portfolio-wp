@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <div style="display: flex; flex-direction: row; width: 100vw;">
         <div style="width: 50vw; margin-top: 5rem; margin-left:3rem">
             <h5>Hi There!</h5>
-            <h1 id="jobTitle" style="color: #FF9B5D">I am a <span class="dynamicText"></span></h1>
+            <h1 id="jobTitle" style="color: #FF9B5D">I am a <span class="dynamicText"></span><span class="cursor">|</span></h1>
             <h5 style="margin-bottom:2rem">I make custom unique websites that are SEO friendly.</h5>
             <a href="#contact-me"
                 style="background-color: #FF9B5D; color: #FAFAFA; border-radius: 5px; text-decoration: none;margin-top:4px; width: fit-content; padding: 10px; border: none; font-weight: 600">
@@ -239,7 +239,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <a href="https://github.com/Patrick-Ngige/Easy-manage" style="text-decoration:none;color:#000">
                 <div class="projects"
                     style="width:15rem;height:15rem;background-color:#F5F5F5;box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;border-radius:10px;padding:2rem">
-                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png"
+                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/program-manager-dashboard.png"
                         style="width:6rem;height:3rem;" alt="">
                     <h5>Easy-manage</h5>
                     <p>a management application that helps Trainers keep track of all their trainees and assign projects
@@ -255,32 +255,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div style="margin-top:2rem;width:100vw">
             <h4 style="color:#FF9B5D">Contact Form</h4>
             <div
-                style="width:70rem;display:flex;justify-content:center;align-items:center;flex-direction:column;background-color:#F5F5F5">
+                style="width:60rem;display:flex;justify-content:center;align-items:center;flex-direction:column;background-color:#F5F5F5;padding:1rem">
                 <form style="width:50vw">
                     <div class="form-outline mb-4">
-                        <input type="text" id="form4Example1" class="form-control"
+                        <label class="form-label" for="form4Example1">Name:</label>
+                        <input type="text" id="form4Example1" class="form-control"placeholder="Enter your name"
                             value="<?php echo isset($name) ? $name : ''; ?>" />
                         <span class="error">
                             <?php echo isset($nameError) ? $nameError : ''; ?>
                         </span>
-                        <label class="form-label" for="form4Example1">Name</label>
                     </div>
                     <div class="form-outline mb-4">
-                        <input type="email" id="form4Example2" class="form-control"
+                        <label class="form-label" for="form4Example2">Email address:</label>
+                        <input type="email" id="form4Example2" class="form-control"placeholder="Enter your email"
                             value="<?php echo isset($email) ? $email : ''; ?>" />
                         <span class="error">
                             <?php echo isset($emailError) ? $emailError : ''; ?>
                         </span>
-                        <label class="form-label" for="form4Example2">Email address</label>
                     </div>
                     <div class="form-outline mb-4">
-                        <textarea name="message" placeholder="Message" rows="4"
+                        <label class="form-label" for="form4Example3">Message:</label>
+                        <textarea name="message" placeholder="Please enter the message you want to pass across" rows="4"
                             cols="85"><?php echo isset($message) ? $message : ''; ?></textarea>
                         <span class="error">
                             <?php echo isset($messageError) ? $messageError : ''; ?>
                         </span>
 
-                        <label class="form-label" for="form4Example3">Message</label>
                     </div>
                     <button type="submit" class="btn btn-block mb-4 w-100"
                         style="background-color:#FF9B5D;color:#FAFAFA;font-weight:600">Send</button>
@@ -292,21 +292,51 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </section>
 
 
+<style>
+    .dynamicText {
+        display: inline-block;
+    }
+
+    .cursor {
+        display: inline-block;
+        animation: blinkCursor 0.5s infinite;
+    }
+
+    @keyframes blinkCursor {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+<div>
+    <span class="dynamicText"></span><span class="cursor">|</span>
+</div>
+
 <script>
     const jobTitles = ['WordPress Developer', 'Brand Manager', 'Graphic Designer', 'SEO Manager'];
     let currentJobTitleIndex = 0;
     let currentText = '';
     let isDeleting = false;
     let typingSpeed = 100;
-    let delayAfterTyping = 3000; 
+    let delayAfterTyping = 3000;
+    let delayBeforeDeleting = 3000;
 
     const dynamicText = document.querySelector('.dynamicText');
+    const cursor = document.querySelector('.cursor');
 
     function type() {
         const currentTitle = jobTitles[currentJobTitleIndex];
         if (isDeleting) {
             currentText = currentTitle.substring(0, currentText.length - 1);
-            typingSpeed = 100;
+            typingSpeed = 50;
+           
         } else {
             currentText = currentTitle.substring(0, currentText.length + 1);
             typingSpeed = 100;
@@ -316,10 +346,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!isDeleting && currentText === currentTitle) {
             isDeleting = true;
             delayAfterTyping = 3000;
+            delayBeforeDeleting = 3000;
         } else if (isDeleting && currentText === '') {
             isDeleting = false;
             currentJobTitleIndex = (currentJobTitleIndex + 1) % jobTitles.length;
-            delayAfterTyping = 0;
+            delayAfterTyping = 3000;
         }
 
         setTimeout(type, typingSpeed);
@@ -329,6 +360,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     }
 
-    // Start typing effect
     setTimeout(type, delayAfterTyping);
 </script>
+
+
+
+
