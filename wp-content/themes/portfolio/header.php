@@ -14,10 +14,10 @@
 
 </head>
 
-<body style="background-color:#010101;overflow-x:hidden;">
+<body style="overflow-x:hidden;">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light"
-        style="margin-top:-40px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); z-index:1; padding: 4px;position:fixed;width:100%">
+        style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); z-index:1; padding: 3px;position:fixed;width:100%">
         <a class="navbar-brand logo" href="#" style="font-weight:700;margin-left:2rem">Patrick Ngige</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -25,7 +25,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end" style="padding:1rem;" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" style="padding:.8rem;" id="navbarNav">
             <ul class="navbar-nav">
 
                 <li>
