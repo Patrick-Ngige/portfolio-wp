@@ -54,8 +54,7 @@
         }
 
         .nav-link:hover {
-            background-color: #FF9B5D;
-            color: #FAFAFA;
+            color: #FF9B5D;
             border-radius: 5px;
         }
     </style>

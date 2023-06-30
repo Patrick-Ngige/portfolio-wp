@@ -298,7 +298,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     let currentText = '';
     let isDeleting = false;
     let typingSpeed = 100;
-    let delayAfterTyping = 3000; // 3 seconds delay after typing
+    let delayAfterTyping = 3000; 
 
     const dynamicText = document.querySelector('.dynamicText');
 
