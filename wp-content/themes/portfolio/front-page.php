@@ -387,7 +387,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     .dynamicText {
         display: inline-block;
-        /* margin:0; */
         padding-left: .8rem;
     }
 

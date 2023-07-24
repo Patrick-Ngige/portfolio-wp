@@ -18,7 +18,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="navbar-brand">
-        <a class=" logo" href="#home" >Patrick
+        <a class="logo" href="#home" >Patrick
             Ngige</a>
             </div>
         <div class="collapse navbar-collapse justify-content-end" style="padding:.5rem;" id="navbarNav">
@@ -65,13 +65,15 @@
             font-size:1.5rem;
             padding-left: 1rem;
             font-weight:600;
-            margin-top: 1rem;
             text-decoration:none;   
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;     
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+            margin-top: 0px;
+            margin-bottom: 0px;    
         }
         .navbar-brand a{
             text-decoration: none;
             color: #FF9B5D;
+            
         }
         .navbar-items{
             display:flex;
@@ -80,8 +82,9 @@
             text-decoration:none;
             gap:1rem;
             list-style: none;
-            /* margin-top:2rem; */
-            margin-right: 1rem;
+            margin-top:0px;
+            margin-bottom:0px;
+            padding-right: 1rem;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
        
