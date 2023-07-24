@@ -30,6 +30,57 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <style>
+    #home{
+        padding: 3rem;
+        gap:1
+    }
+    .home{
+        display: flex; 
+        flex-direction: row; 
+        width: 100vw;
+    }
+    .home-desc{
+        width: 50vw; 
+        margin-top: 5rem; 
+        margin-left:3rem;
+        line-height: 1rem;
+    }
+    .home-desc h3{
+        opacity: .8;
+    }
+    .home-desc a {
+        background-color: #FF9B5D; 
+        color: #FAFAFA; 
+        border-radius: 5px; 
+        text-decoration: none;
+        margin-top:4px; 
+        width: fit-content; 
+        padding: 10px; 
+        border: none; 
+        font-weight: 600
+    }
+    .home-img{
+        width: 40vw;
+    }
+    .home-img a {
+        background-color: #FAFAFA;
+        height: 60vh;
+        border-radius:50%
+    }
+    .contact-us{
+        display:flex;
+        flex-direction:row;
+        gap:1rem;
+        justify-content:center;
+    }
+  
+    #jobTitle{
+        color: #FF9B5D;
+        font-size:3rem;
+    }
+    #job-desc{
+        margin-bottom:2rem;
+    }
     .contact-btn {
         background-color: #F5F5F5;
         width: 10rem;
@@ -37,27 +88,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         border: 1px solid #BCBCBC;
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
-    }
-
-    .contact-btn a {
         text-decoration: none;
-        color: #000;
-
+        color: #000;   
+    }
+    .email{
+        width:13rem;
+        padding-left: .8rem;
+    }
+    #text {
+        opacity:0.6;
+        padding-left: 1.5rem;
+    }
+    #text1 {
+        opacity:0.6;
+        padding-left: .1rem;
     }
 
-    .contact-btn:hover {
+    span {
+        font-weight:600;
+        padding-left: 3rem;
+    }
+    .contact-btn:hover{
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         background-color: #FF9B5D;
-
-
-    }
-
-    .contact-btn a:hover {
         color: #FAFAFA;
 
-
     }
-
+   
     .projects:hover {
         box-shadow:
             1px 1px #53a7ea,
@@ -68,20 +125,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 </style>
 
-<section id="home" style="padding: 3rem;gap:1">
-    <div style="display: flex; flex-direction: row; width: 100vw;">
-        <div style="width: 50vw; margin-top: 5rem; margin-left:3rem">
-            <h5>Hi There!</h5>
-            <h1 id="jobTitle" style="color: #FF9B5D">I am a <span class="dynamicText"></span><span class="cursor">|</span></h1>
-            <h5 style="margin-bottom:2rem">I make custom unique websites that are SEO friendly.</h5>
-            <a href="#contact-me"
-                style="background-color: #FF9B5D; color: #FAFAFA; border-radius: 5px; text-decoration: none;margin-top:4px; width: fit-content; padding: 10px; border: none; font-weight: 600">
-                Reach out
-            </a>
+<section id="home">
+    <div class="home" >
+        <div class="home-desc">
+            <h3>Hi There!</h3>
+            <h1 id="jobTitle" >I am a<span class="dynamicText"></span><span class="cursor">|</span></h1>
+            <h3 id="job-desc">I make custom unique websites that are SEO friendly.</h3>
+            <a href="#contact-me">Reach out </a>
         </div>
-        <div style="width: 40vw">
+        <div class="home-img" >
             <img src="http://localhost/portfolio/wp-content/uploads/2023/06/me.png"
-                style="background-color: #FAFAFA; height: 60vh;border-radius:50%" alt="">
+                 alt="my image">
         </div>
     </div>
 </section>
@@ -91,23 +145,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <!-- CONTACT US -->
     <section id="contact-us">
-        <div style="display:flex;flex-direction:row;gap:1rem;justify-content:center;">
-            <button class="contact-btn " style="width:13rem">
-                <a href="#"><span style="font-weight:600">Email <br> <span
-                            style="opacity:0.6">wakemanjajr@gmail.com</span>
-                        </p>
-            </button>
-            <button class="contact-btn ">
-                <a href="#"><span style="font-weight:600">Phone <br> <span style="opacity:0.6">+254700165451</span></p>
-            </button>
-            <button class="contact-btn ">
-                <a href="https://github.com/patrick-ngige"><span style="font-weight:600">GitHub <br> <span
-                            style="opacity:0.6">Patrick-Ngige</span></p>
-            </button>
-            <button class="contact-btn ">
-                <a href="www.linkedin.com/in/patrick-ngige-4b772623b"><span style="font-weight:600">LinkedIn </span>
-                    <br> <span style="opacity:0.6">Patrick-Ngige</span></a>
-            </button>
+        <div class="contact-us">
+            <!-- <button  > -->
+                <a class="contact-btn email" href="#"><span>Email </span><br> <p><span id="text1"> wakemanjajr@gmail.com</span></p></a>
+            <!-- </button> -->
+            
+                <a class="contact-btn" href="#"><span>Phone </span><br> <span id="text" >+254700165451</span></p></a>
+            
+                <a class="contact-btn" href="https://github.com/patrick-ngige"><span>GitHub </span><br> <span id="text"
+                            >Patrick-Ngige</span></a>
+            
+                <a class="contact-btn" href="www.linkedin.com/in/patrick-ngige-4b772623b"><span>LinkedIn </span>
+                    <br> <span id="text" >Patrick-Ngige</span></a>
         </div>
     </section>
 
