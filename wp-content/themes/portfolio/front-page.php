@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         margin-left:3rem;
         line-height: 1rem;
     }
-    .home-desc h3{
+    .home-desc h4{
         opacity: .8;
     }
     .home-desc a {
@@ -76,7 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   
     #jobTitle{
         color: #FF9B5D;
-        font-size:3rem;
+        font-size:2.8rem;
     }
     #job-desc{
         margin-bottom:2rem;
@@ -114,7 +114,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         color: #FAFAFA;
 
     }
-   
+    .about-me{
+        display:flex;
+        flex-direction:row;
+        margin-top:2rem;
+        width:100vw;
+        gap:0rem;
+    }
+   #img-div{
+    width:40vw;
+   }
+   .about-me img{
+    background-color:#FAFAFA;
+    height:60vh;
+    border-radius:50%
+   }
+   #about-me{
+    width:38vw;
+   }
+   #skills{
+    display:flex;
+    gap:6rem;
+   }
+   #skills ul{
+    height:5rem;
+    flex:3;
+    flex-wrap:wrap;
+   }
+  
+
     .projects:hover {
         box-shadow:
             1px 1px #53a7ea,
@@ -128,9 +156,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <section id="home">
     <div class="home" >
         <div class="home-desc">
-            <h3>Hi There!</h3>
+            <h4>Hi There!</h4>
             <h1 id="jobTitle" >I am a<span class="dynamicText"></span><span class="cursor">|</span></h1>
-            <h3 id="job-desc">I make custom unique websites that are SEO friendly.</h3>
+            <h4 id="job-desc">I make custom unique websites that are SEO friendly.</h4>
             <a href="#contact-me">Reach out </a>
         </div>
         <div class="home-img" >
@@ -164,12 +192,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <Section id="about-me">
 
 
-        <div style="display:flex;flex-direction:row;margin-top:2rem;width:100vw;gap:0rem">
-            <div style="width:40vw;">
+        <div class="about-me" >
+            <div id="img-div">
                 <img src="http://localhost/portfolio/wp-content/uploads/2023/06/me.png"
-                    style="background-color:#FAFAFA;height:60vh;border-radius:50%" alt="">
+                     alt="my photo">
             </div>
-            <div style="width:38vw;">
+            <div id="about-me">
                 <h4 style="color:#FF9B5D">Who am I?</h4>
                 <h3>I am Patrick Ngige, a WordPress Developer and a Branding Manager.</h3>
                 <p>I am a passionate and experienced WordPress Developer. I am all about designing, creating and
@@ -177,9 +205,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     your website to hit global standards both in tech and business fields. I combine my graphic design
                     skills and branding knowledge to develop eye-catching global standard websites. </p><br>
                 <h4>Skill Set</h4>
-                <div style="display:flex;gap:6rem">
+                <div id="skills">
                     <div>
-                        <ul style="height:5rem;flex:3;flex-wrap:wrap;">
+                        <ul>
                             <li>PHP</li>
                             <li>WordPress</li>
                             <li>SEO</li>
@@ -359,6 +387,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     .dynamicText {
         display: inline-block;
+        /* margin:0; */
+        padding-left: .8rem;
     }
 
     .cursor {
