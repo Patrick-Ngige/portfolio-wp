@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     .home-img{
         width: 40vw;
     }
-    .home-img a {
+    .home-img img {
         background-color: #FAFAFA;
         height: 60vh;
         border-radius:50%
@@ -80,6 +80,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     #job-desc{
         margin-bottom:2rem;
+    }
+    .home-desc a:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
     .contact-btn {
         background-color: #F5F5F5;
@@ -141,7 +144,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flex:3;
     flex-wrap:wrap;
    }
-  
+   .my-services{
+    margin-top:2rem;
+   }
+   .s-cards{
+    display:flex;
+    gap:2rem;
+    margin-left:7rem;
+    margin-top:3rem
+   }
+  #s-cards{
+    width:auto;
+    height:auto;
+    background-color:#F5F5F5;
+    box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;
+    border-radius:10px;
+    padding:1.5rem;
+  }
+  #s-cards img{
+    width:3rem;
+    height:3rem;
+  }
 
     .projects:hover {
         box-shadow:
@@ -230,29 +253,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <!-- MY SERVICES -->
     <section id="my-services">
-        <div style="margin-top:2rem;">
+        <div class="my-services">
             <h4 style="color:#FF9B5D">My Services</h4>
-            <div style="display:flex;gap:2rem;margin-left:7rem;margin-top:3rem">
-                <div
-                    style="width:25rem;height:15rem;background-color:#F5F5F5;box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;border-radius:10px;padding:2rem">
-                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png"
-                        style="width:3rem;height:3rem;" alt="">
+            <div class="s-cards">
+                <div id="s-cards">
+                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png" alt="web development">
                     <h5>Web Development</h5>
-                    <p>Experience a dream custom website that is going to blow your mind away.</p>
+                    <p>Let’s transform your dream website into reality.</p>
                 </div>
-                <div
-                    style="width:25rem;height:15rem;background-color:#F5F5F5;box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;border-radius:10px;padding:2rem">
-                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/brand.png"
-                        style="width:3rem;height:3rem;" alt="">
+                <div id="s-cards">
+                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/brand.png" alt="branding">
                     <h5>Branding</h5>
                     <p>Let’s make your website or business stand out from your competitors</p>
                 </div>
-                <div
-                    style="width:25rem;height:15rem;background-color:#F5F5F5;box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;border-radius:10px;padding:2rem">
-                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/photoshop.png"
-                        style="width:3rem;height:3rem;" alt="">
+                <div id="s-cards">
+                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/photoshop.png" alt="Graphic Design">
                     <h5>Graphic Design</h5>
                     <p>Art-design your idea with me into reality and win the hearts of your audience</p>
+                </div>
+                <div id="s-cards">
+                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/photoshop.png" alt="Graphic Design">
+                    <h5>SEO Manager</h5>
+                    <p>Improve Google rankings of your website to attract more clients. </p>
                 </div>
             </div>
         </div>
