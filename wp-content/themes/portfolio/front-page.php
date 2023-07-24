@@ -309,7 +309,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div style="margin-top:2rem;">
             <h4 style="color:#FF9B5D">My Projects</h4>
             <div class="projects-wrap">
-            <a href="https://github.com/Patrick-Ngige/Easy-manage">
+                <a href="https://github.com/Patrick-Ngige/Easy-manage">
                     <div class="projects">
                         <img src="http://localhost/portfolio/wp-content/uploads/2023/06/program-manager-dashboard.png"
                             alt="Easy-manage">
@@ -364,7 +364,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                 </a>
 
-                
+
             </div>
         </div>
         </div>
@@ -425,8 +425,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     .projects-wrap {
         display: flex;
         gap: 3rem;
-        margin-left:7rem;
-        flex:3;
+        margin-left: 7rem;
+        flex: 3;
         flex-wrap: wrap
     }
 
