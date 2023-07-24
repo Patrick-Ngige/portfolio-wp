@@ -17,16 +17,12 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand logo" href="#home" >Patrick
+        <div class="navbar-brand">
+        <a class=" logo" href="#home" >Patrick
             Ngige</a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
+            </div>
         <div class="collapse navbar-collapse justify-content-end" style="padding:.5rem;" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-items">
                 <li>
                     <a class="nav-link" href="#home">Home</a>
                 </li>
@@ -53,29 +49,42 @@
         }
         .navbar{
             z-index:1;
-            padding: 3px;
+            /* padding: 2px; */
             position:fixed;
             width:100%;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             top: 0px;
             opacity:1;
             background-color: #FAFAFA;
+            height: 4rem;
+            display: flex;
+            font-display: row;
+            justify-content: space-between;
         }
-        .navbar-nav{
+        .navbar-brand{
+            font-size:1.5rem;
+            padding-left: 1rem;
+            font-weight:600;
+            margin-top: 1rem;
+            text-decoration:none;   
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;     
+        }
+        .navbar-brand a{
+            text-decoration: none;
+            color: #FF9B5D;
+        }
+        .navbar-items{
             display:flex;
             flex-direction:row;
             justify-content:end;
             text-decoration:none;
             gap:1rem;
             list-style: none;
-            top:0;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+            /* margin-top:2rem; */
+            margin-right: 1rem;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
-        .navbar-brand{
-            font-weight:400;
-            margin-left:2rem;
-            text-decoration:none;
-        }
+       
         .nav-link {
             color: black;
             font-weight: 600;
