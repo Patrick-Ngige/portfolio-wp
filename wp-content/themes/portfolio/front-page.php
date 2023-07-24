@@ -190,7 +190,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="projects">
                         <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png"
                              alt="">
-                        <h5>Contact System</h5>
+                        <h3>Contact System</h3>
                         <p>Experience a dream custom website that is going to blow your mind away.</p>
                     </div>
             </a>
@@ -198,7 +198,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="projects">
                     <img src="http://localhost/portfolio/wp-content/uploads/2023/06/brand.png"
                          alt="">
-                    <h5>Ticketing System</h5>
+                    <h3>Ticketing System</h3>
                     <p>This is a ticketing system used to book tickets of upcoming events</p>
                 </div>
             </a>
@@ -207,7 +207,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="projects">
                     <img src="http://localhost/portfolio/wp-content/uploads/2023/06/seo.png"
                          alt="">
-                    <h5>Project System</h5>
+                    <h3>Project System</h3>
                     <p>A system used to create and assign members projects </p>
                 </div>
             </a>
@@ -216,7 +216,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="projects">
                     <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png"
                          alt="">
-                    <h5>ShopIT</h5>
+                    <h3>ShopIT</h3>
                     <p>This is an e-commerce site called Shopit that is developed useing custom theme and custom plugin
                     </p>
                 </div>
@@ -226,7 +226,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="projects">
                     <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png"
                          alt="">
-                    <h5>Event Management</h5>
+                    <h3>Event Management</h3>
                     <p>An event management system use to create events using custom theme and plugins.</p>
                 </div>
             </a>
@@ -235,7 +235,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="projects">
                     <img src="http://localhost/portfolio/wp-content/uploads/2023/06/program-manager-dashboard.png"
                          alt="">
-                    <h5>Easy-manage</h5>
+                    <h3>Easy-manage</h3>
                     <p>a management application that helps Trainers keep track of all their trainees and assign projects
                         to them. </p>
                 </div>
@@ -247,7 +247,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- Contact Form -->
     <section id="contact-me">
         <div style="margin-top:2rem;width:100vw">
-            <h4 style="color:#FF9B5D">Contact Form</h4>
+            <h3 style="color:#FF9B5D">Contact Form</h3>
             <div
                 style="width:60rem;display:flex;justify-content:center;align-items:center;flex-direction:column;background-color:#F5F5F5;padding:1rem">
                 <form style="width:50vw">
@@ -303,6 +303,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     #projects img{
         width:6rem;height:3rem;
 
+    }
+    #projects h4{
+        line-height: normal;
+        font-weight: 500;
     }
     .dynamicText {
         display: inline-block;
