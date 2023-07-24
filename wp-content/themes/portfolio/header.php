@@ -48,7 +48,8 @@
     <style>
         body{
             overflow-x:hidden;
-            font-size:16px
+            /* font-size:14px; */
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .navbar{
             z-index:1;
@@ -68,6 +69,7 @@
             gap:1rem;
             list-style: none;
             top:0;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
         }
         .navbar-brand{
             font-weight:400;
@@ -77,7 +79,6 @@
         .nav-link {
             color: black;
             font-weight: 600;
-            border-radius: 5px;
             text-decoration: none;
             color: black;
             opacity: .7;
