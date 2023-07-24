@@ -44,12 +44,10 @@
     <style>
         body{
             overflow-x:hidden;
-            /* font-size:14px; */
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         .navbar{
             z-index:1;
-            /* padding: 2px; */
             position:fixed;
             width:100%;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

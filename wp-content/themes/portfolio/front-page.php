@@ -30,60 +30,70 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 ?>
 
 <style>
-    #home{
+    #home {
         padding: 3rem;
-        gap:1
+        gap: 1
     }
-    .home{
-        display: flex; 
-        flex-direction: row; 
+
+    .home {
+        display: flex;
+        flex-direction: row;
         width: 100vw;
     }
-    .home-desc{
-        width: 50vw; 
-        margin-top: 5rem; 
-        margin-left:3rem;
+
+    .home-desc {
+        width: 50vw;
+        margin-top: 5rem;
+        margin-left: 3rem;
         line-height: 1rem;
     }
-    .home-desc h4{
+
+    .home-desc h4 {
         opacity: .8;
     }
+
     .home-desc a {
-        background-color: #FF9B5D; 
-        color: #FAFAFA; 
-        border-radius: 5px; 
+        background-color: #FF9B5D;
+        color: #FAFAFA;
+        border-radius: 5px;
         text-decoration: none;
-        margin-top:4px; 
-        width: fit-content; 
-        padding: 10px; 
-        border: none; 
+        margin-top: 4px;
+        width: fit-content;
+        padding: 10px;
+        border: none;
         font-weight: 600
     }
-    .home-img{
+
+    .home-img {
         width: 40vw;
     }
+
     .home-img img {
         background-color: #FAFAFA;
         height: 60vh;
-        border-radius:50%
+        border-radius: 50%
     }
-    .contact-us{
-        display:flex;
-        flex-direction:row;
-        gap:1rem;
-        justify-content:center;
+
+    .contact-us {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
     }
-  
-    #jobTitle{
+
+    #jobTitle {
         color: #FF9B5D;
-        font-size:2.8rem;
+        font-size: 2.8rem;
     }
-    #job-desc{
-        margin-bottom:2rem;
+
+    #job-desc {
+        margin-bottom: 2rem;
     }
-    .home-desc a:hover{
+
+    .home-desc a:hover {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
+
     .contact-btn {
         background-color: #F5F5F5;
         width: 10rem;
@@ -92,101 +102,114 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
         text-decoration: none;
-        color: #000;   
+        color: #000;
     }
-    .email{
-        width:13rem;
+
+    .email {
+        width: 13rem;
         padding-left: .8rem;
     }
+
     #text {
-        opacity:0.6;
+        opacity: 0.6;
         padding-left: 1.5rem;
     }
+
     #text1 {
-        opacity:0.6;
+        opacity: 0.6;
         padding-left: .1rem;
     }
 
     span {
-        font-weight:600;
+        font-weight: 600;
         padding-left: 3rem;
     }
-    .contact-btn:hover{
+
+    .contact-btn:hover {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
         background-color: #FF9B5D;
         color: #FAFAFA;
 
     }
-    .about-me{
-        display:flex;
-        flex-direction:row;
-        margin-top:2rem;
-        width:100vw;
-        gap:0rem;
+
+    .about-me {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        width: 100vw;
+        gap: 0rem;
     }
-   #img-div{
-    width:40vw;
-   }
-   .about-me img{
-    background-color:#FAFAFA;
-    height:60vh;
-    border-radius:50%
-   }
-   #about-me{
-    width:38vw;
-   }
-   #skills{
-    display:flex;
-    gap:6rem;
-   }
-   #skills ul{
-    height:5rem;
-    flex:3;
-    flex-wrap:wrap;
-   }
-   .my-services{
-    margin-top:2rem;
-   }
-   .s-cards{
-    display:flex;
-    gap:2rem;
-    margin-left:7rem;
-    margin-top:3rem
-   }
-  #s-cards{
-    width:auto;
-    height:auto;
-    background-color:#F5F5F5;
-    box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;
-    border-radius:10px;
-    padding:1.5rem;
-  }
-  #s-cards img{
-    width:3rem;
-    height:3rem;
-  }
+
+    #img-div {
+        width: 40vw;
+    }
+
+    .about-me img {
+        background-color: #FAFAFA;
+        height: 60vh;
+        border-radius: 50%
+    }
+
+    #about-me {
+        width: 38vw;
+    }
+
+    #skills {
+        display: flex;
+        gap: 6rem;
+    }
+
+    #skills ul {
+        height: 5rem;
+        flex: 3;
+        flex-wrap: wrap;
+    }
+
+    .my-services {
+        margin-top: 2rem;
+    }
+
+    .s-cards {
+        display: flex;
+        gap: 2rem;
+        margin-left: 7rem;
+        margin-top: 3rem
+    }
+
+    #s-cards {
+        width: auto;
+        height: auto;
+        background-color: #F5F5F5;
+        box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        padding: 1.5rem;
+    }
+
+    #s-cards img {
+        width: 3rem;
+        height: 3rem;
+    }
 
     .projects:hover {
         box-shadow:
-            1px 1px #53a7ea,
-            2px 2px #53a7ea,
-            3px 3px #53a7ea;
+            1px 1px #FF9B5D,
+            2px 2px #FF9B5D,
+            3px 3px #FF9B5D;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
     }
 </style>
 
 <section id="home">
-    <div class="home" >
+    <div class="home">
         <div class="home-desc">
             <h4>Hi There!</h4>
-            <h1 id="jobTitle" >I am a<span class="dynamicText"></span><span class="cursor">|</span></h1>
+            <h1 id="jobTitle">I am a<span class="dynamicText"></span><span class="cursor">|</span></h1>
             <h4 id="job-desc">I make custom unique websites that are SEO friendly.</h4>
             <a href="#contact-me">Reach out </a>
         </div>
-        <div class="home-img" >
-            <img src="http://localhost/portfolio/wp-content/uploads/2023/06/me.png"
-                 alt="my image">
+        <div class="home-img">
+            <img src="http://localhost/portfolio/wp-content/uploads/2023/06/me.png" alt="my image">
         </div>
     </div>
 </section>
@@ -198,16 +221,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <section id="contact-us">
         <div class="contact-us">
             <!-- <button  > -->
-                <a class="contact-btn email" href="#"><span>Email </span><br> <p><span id="text1"> wakemanjajr@gmail.com</span></p></a>
+            <a class="contact-btn email" href="#"><span>Email </span><br>
+                <p><span id="text1"> wakemanjajr@gmail.com</span></p>
+            </a>
             <!-- </button> -->
-            
-                <a class="contact-btn" href="#"><span>Phone </span><br> <span id="text" >+254700165451</span></p></a>
-            
-                <a class="contact-btn" href="https://github.com/patrick-ngige"><span>GitHub </span><br> <span id="text"
-                            >Patrick-Ngige</span></a>
-            
-                <a class="contact-btn" href="www.linkedin.com/in/patrick-ngige-4b772623b"><span>LinkedIn </span>
-                    <br> <span id="text" >Patrick-Ngige</span></a>
+
+            <a class="contact-btn" href="#"><span>Phone </span><br> <span id="text">+254700165451</span></p></a>
+
+            <a class="contact-btn" href="https://github.com/patrick-ngige"><span>GitHub </span><br> <span
+                    id="text">Patrick-Ngige</span></a>
+
+            <a class="contact-btn" href="www.linkedin.com/in/patrick-ngige-4b772623b"><span>LinkedIn </span>
+                <br> <span id="text">Patrick-Ngige</span></a>
         </div>
     </section>
 
@@ -215,10 +240,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <Section id="about-me">
 
 
-        <div class="about-me" >
+        <div class="about-me">
             <div id="img-div">
-                <img src="http://localhost/portfolio/wp-content/uploads/2023/06/me.png"
-                     alt="my photo">
+                <img src="http://localhost/portfolio/wp-content/uploads/2023/06/me.png" alt="my photo">
             </div>
             <div id="about-me">
                 <h4 style="color:#FF9B5D">Who am I?</h4>
@@ -284,61 +308,64 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <section id="projects">
         <div style="margin-top:2rem;">
             <h4 style="color:#FF9B5D">My Projects</h4>
-            <a href="https://github.com/Patrick-Ngige/ContactManagementSystem" >
-                <div style="display:flex;gap:2rem;margin-left:7rem;margin-top:3rem;display:flex;flex-wrap:wrap">
+            <div class="projects-wrap">
+            <a href="https://github.com/Patrick-Ngige/Easy-manage">
                     <div class="projects">
-                        <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png"
-                             alt="">
-                        <h3>Contact System</h3>
+                        <img src="http://localhost/portfolio/wp-content/uploads/2023/06/program-manager-dashboard.png"
+                            alt="Easy-manage">
+                        <h5>Easy-manage</h5>
+                        <p>a management application that helps Trainers keep track of all their trainees and assign
+                            projects
+                            to them. </p>
+                    </div>
+                </a>
+                <a href="https://github.com/Patrick-Ngige/ContactManagementSystem">
+
+                    <div class="projects">
+                        <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png" alt="Contact System">
+                        <h5>Contact System</h5>
                         <p>Experience a dream custom website that is going to blow your mind away.</p>
                     </div>
-            </a>
-            <a href="https://github.com/Patrick-Ngige/ticketing-system" >
-                <div class="projects">
-                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/brand.png"
-                         alt="">
-                    <h3>Ticketing System</h3>
-                    <p>This is a ticketing system used to book tickets of upcoming events</p>
-                </div>
-            </a>
+                    <!-- </div> -->
+                </a>
+                <a href="https://github.com/Patrick-Ngige/ticketing-system">
+                    <div class="projects">
+                        <img src="http://localhost/portfolio/wp-content/uploads/2023/06/brand.png"
+                            alt="Ticketing System">
+                        <h5>Ticketing System</h5>
+                        <p>This is a ticketing system used to book tickets of upcoming events</p>
+                    </div>
+                </a>
 
-            <a href="https://github.com/Patrick-Ngige/may-project" >
-                <div class="projects">
-                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/seo.png"
-                         alt="">
-                    <h3>Project System</h3>
-                    <p>A system used to create and assign members projects </p>
-                </div>
-            </a>
+                <a href="https://github.com/Patrick-Ngige/may-project">
+                    <div class="projects">
+                        <img src="http://localhost/portfolio/wp-content/uploads/2023/06/seo.png" alt="Project System">
+                        <h5>Project System</h5>
+                        <p>A system used to create and assign members projects </p>
+                    </div>
+                </a>
 
-            <a href="https://github.com/brianMunyao/ShopIT" >
-                <div class="projects">
-                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png"
-                         alt="">
-                    <h3>ShopIT</h3>
-                    <p>This is an e-commerce site called Shopit that is developed useing custom theme and custom plugin
-                    </p>
-                </div>
-            </a>
+                <a href="https://github.com/brianMunyao/ShopIT">
+                    <div class="projects">
+                        <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png" alt="ShopIT">
+                        <h5>ShopIT</h5>
+                        <p>This is an e-commerce site called Shopit that is developed useing custom theme and custom
+                            plugin
+                        </p>
+                    </div>
+                </a>
 
-            <a href="https://github.com/1Eve/event-management-system" >
-                <div class="projects">
-                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png"
-                         alt="">
-                    <h3>Event Management</h3>
-                    <p>An event management system use to create events using custom theme and plugins.</p>
-                </div>
-            </a>
+                <a href="https://github.com/1Eve/event-management-system">
+                    <div class="projects">
+                        <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png"
+                            alt="Event Management">
+                        <h5>Event Management</h5>
+                        <p>An event management system use to create events using custom theme and plugins.</p>
+                    </div>
+                </a>
 
-            <a href="https://github.com/Patrick-Ngige/Easy-manage" >
-                <div class="projects">
-                    <img src="http://localhost/portfolio/wp-content/uploads/2023/06/program-manager-dashboard.png"
-                         alt="">
-                    <h3>Easy-manage</h3>
-                    <p>a management application that helps Trainers keep track of all their trainees and assign projects
-                        to them. </p>
-                </div>
-            </a>
+                
+            </div>
         </div>
         </div>
     </section>
@@ -352,7 +379,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <form style="width:50vw">
                     <div class="form-outline mb-4">
                         <label class="form-label" for="form4Example1">Name:</label>
-                        <input type="text" id="form4Example1" class="form-control"placeholder="Enter your name"
+                        <input type="text" id="form4Example1" class="form-control" placeholder="Enter your name"
                             value="<?php echo isset($name) ? $name : ''; ?>" />
                         <span class="error">
                             <?php echo isset($nameError) ? $nameError : ''; ?>
@@ -360,7 +387,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                     <div class="form-outline mb-4">
                         <label class="form-label" for="form4Example2">Email address:</label>
-                        <input type="email" id="form4Example2" class="form-control"placeholder="Enter your email"
+                        <input type="email" id="form4Example2" class="form-control" placeholder="Enter your email"
                             value="<?php echo isset($email) ? $email : ''; ?>" />
                         <span class="error">
                             <?php echo isset($emailError) ? $emailError : ''; ?>
@@ -386,27 +413,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 <style>
-    .projects{
-        width:11rem;
-        height:12rem;
-        background-color:#F5F5F5;
+    .projects {
+        width: 15rem;
+        height: 14rem;
+        background-color: #F5F5F5;
         box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;
-        border-radius:10px;
-        padding:2rem
+        border-radius: 10px;
+        padding: 1.5rem
     }
-    #projects a{
-        text-decoration:none;
-        color:#000;
+
+    .projects-wrap {
+        display: flex;
+        gap: 3rem;
+        margin-left:7rem;
+        flex:3;
+        flex-wrap: wrap
+    }
+
+    #projects a {
+        text-decoration: none;
+        color: #000;
 
     }
-    #projects img{
-        width:6rem;height:3rem;
+
+    #projects img {
+        width: 6rem;
+        height: 3rem;
 
     }
-    #projects h4{
+
+    #projects h4 {
         line-height: normal;
         font-weight: 500;
     }
+
     .dynamicText {
         display: inline-block;
         padding-left: .8rem;
@@ -421,9 +461,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         0% {
             opacity: 1;
         }
+
         50% {
             opacity: 0;
         }
+
         100% {
             opacity: 1;
         }
@@ -451,7 +493,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (isDeleting) {
             currentText = currentTitle.substring(0, currentText.length - 1);
             typingSpeed = 50;
-           
+
         } else {
             currentText = currentTitle.substring(0, currentText.length + 1);
             typingSpeed = 100;
@@ -477,7 +519,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     setTimeout(type, delayAfterTyping);
 </script>
-
-
-
-
