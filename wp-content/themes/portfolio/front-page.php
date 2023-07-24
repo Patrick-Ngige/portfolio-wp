@@ -185,62 +185,56 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <section id="projects">
         <div style="margin-top:2rem;">
             <h4 style="color:#FF9B5D">My Projects</h4>
-            <a href="https://github.com/Patrick-Ngige/ContactManagementSystem" style="text-decoration:none;color:#000">
-                <div style="display:flex;gap:3rem;margin-left:7rem;margin-top:3rem;display:flex;flex-wrap:wrap">
-                    <div class="projects"
-                        style="width:15rem;height:15rem;background-color:#F5F5F5;box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;border-radius:10px;padding:2rem">
+            <a href="https://github.com/Patrick-Ngige/ContactManagementSystem" >
+                <div style="display:flex;gap:2rem;margin-left:7rem;margin-top:3rem;display:flex;flex-wrap:wrap">
+                    <div class="projects">
                         <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png"
-                            style="width:6rem;height:3rem;" alt="">
+                             alt="">
                         <h5>Contact System</h5>
                         <p>Experience a dream custom website that is going to blow your mind away.</p>
                     </div>
             </a>
-            <a href="https://github.com/Patrick-Ngige/ticketing-system" style="text-decoration:none;color:#000">
-                <div class="projects"
-                    style="width:15rem;height:15rem;background-color:#F5F5F5;box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;border-radius:10px;padding:2rem">
+            <a href="https://github.com/Patrick-Ngige/ticketing-system" >
+                <div class="projects">
                     <img src="http://localhost/portfolio/wp-content/uploads/2023/06/brand.png"
-                        style="width:6rem;height:3rem;" alt="">
+                         alt="">
                     <h5>Ticketing System</h5>
                     <p>This is a ticketing system used to book tickets of upcoming events</p>
                 </div>
             </a>
 
-            <a href="https://github.com/Patrick-Ngige/may-project" style="text-decoration:none;color:#000">
-                <div class="projects"
-                    style="width:15rem;height:15rem;background-color:#F5F5F5;box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;border-radius:10px;padding:2rem">
+            <a href="https://github.com/Patrick-Ngige/may-project" >
+                <div class="projects">
                     <img src="http://localhost/portfolio/wp-content/uploads/2023/06/seo.png"
-                        style="width:6rem;height:3rem;" alt="">
+                         alt="">
                     <h5>Project System</h5>
                     <p>A system used to create and assign members projects </p>
                 </div>
             </a>
 
-            <a href="https://github.com/brianMunyao/ShopIT" style="text-decoration:none;color:#000">
-                <div class="projects"
-                    style="width:15rem;height:15rem;background-color:#F5F5F5;box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;border-radius:10px;padding:2rem">
+            <a href="https://github.com/brianMunyao/ShopIT" >
+                <div class="projects">
                     <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png"
-                        style="width:6rem;height:3rem;" alt="">
+                         alt="">
                     <h5>ShopIT</h5>
                     <p>This is an e-commerce site called Shopit that is developed useing custom theme and custom plugin
                     </p>
                 </div>
             </a>
 
-            <a href="https://github.com/1Eve/event-management-system" style="text-decoration:none;color:#000">
-                <div class="projects"
-                    style="width:15rem;height:15rem;background-color:#F5F5F5;box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;border-radius:10px;padding:2rem">
+            <a href="https://github.com/1Eve/event-management-system" >
+                <div class="projects">
                     <img src="http://localhost/portfolio/wp-content/uploads/2023/06/code.png"
-                        style="width:6rem;height:3rem;" alt="">
+                         alt="">
                     <h5>Event Management</h5>
                     <p>An event management system use to create events using custom theme and plugins.</p>
                 </div>
             </a>
 
-            <a href="https://github.com/Patrick-Ngige/Easy-manage" style="text-decoration:none;color:#000">
-                <div class="projects"
-                    style="width:15rem;height:15rem;background-color:#F5F5F5;box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;border-radius:10px;padding:2rem">
+            <a href="https://github.com/Patrick-Ngige/Easy-manage" >
+                <div class="projects">
                     <img src="http://localhost/portfolio/wp-content/uploads/2023/06/program-manager-dashboard.png"
-                        style="width:6rem;height:3rem;" alt="">
+                         alt="">
                     <h5>Easy-manage</h5>
                     <p>a management application that helps Trainers keep track of all their trainees and assign projects
                         to them. </p>
@@ -293,6 +287,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 <style>
+    .projects{
+        width:11rem;
+        height:12rem;
+        background-color:#F5F5F5;
+        box-shadow: rgba(99, 78, 99, 0.2) 0px 2px 8px 0px;
+        border-radius:10px;
+        padding:2rem
+    }
+    #projects a{
+        text-decoration:none;
+        color:#000;
+
+    }
+    #projects img{
+        width:6rem;height:3rem;
+
+    }
     .dynamicText {
         display: inline-block;
     }
