@@ -14,20 +14,21 @@
 
 </head>
 
-<body style="overflow-x:hidden;">
+<body style="overflow-x:hidden;font-size:16px">
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light"
-        style="z-index:1; padding: 3px;position:fixed;width:100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);top: 0px">
-        <a class="navbar-brand logo" href="#home" style="font-weight:700;margin-left:2rem">Patrick Ngige</a>
+        style="z-index:1; padding: 3px;position:fixed;width:100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);top: 0px;opacity:1;background-color: #FAFAFA;">
+        <a class="navbar-brand logo" href="#home" style="font-weight:400;margin-left:2rem;text-decoration:none">Patrick
+            Ngige</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end" style="padding:.8rem;" id="navbarNav">
-            <ul class="navbar-nav">
-
+        <div class="collapse navbar-collapse justify-content-end" style="padding:.5rem;" id="navbarNav">
+            <ul class="navbar-nav"
+                style="display:flex;flex-direction:row;justify-content:end;text-decoration:none;gap:1rem;list-style: none;">
                 <li>
                     <a class="nav-link" href="#home">Home</a>
                 </li>
@@ -43,7 +44,7 @@
                 <li>
                     <a class="nav-link" href="#contact-me">Contact Me</a>
                 </li>
-                </ul>
+            </ul>
         </div>
     </nav>
     <style>
@@ -51,10 +52,25 @@
             color: black;
             font-weight: 600;
             border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            opacity: .7;
         }
 
         .nav-link:hover {
             color: #FF9B5D;
             border-radius: 5px;
+        }
+
+        @media (max-width:480px) {
+            .nav-link {
+                color: black;
+                font-weight: 500;
+                border-radius: 5px;
+                text-decoration: none;
+                color: black;
+                opacity: .7;
+                margin-right: 10px;
+            }
         }
     </style>
