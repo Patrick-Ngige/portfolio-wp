@@ -14,11 +14,10 @@
 
 </head>
 
-<body style="overflow-x:hidden;font-size:16px">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light"
-        style="z-index:1; padding: 3px;position:fixed;width:100%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);top: 0px;opacity:1;background-color: #FAFAFA;">
-        <a class="navbar-brand logo" href="#home" style="font-weight:400;margin-left:2rem;text-decoration:none">Patrick
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand logo" href="#home" >Patrick
             Ngige</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -27,8 +26,7 @@
         </button>
 
         <div class="collapse navbar-collapse justify-content-end" style="padding:.5rem;" id="navbarNav">
-            <ul class="navbar-nav"
-                style="display:flex;flex-direction:row;justify-content:end;text-decoration:none;gap:1rem;list-style: none;">
+            <ul class="navbar-nav">
                 <li>
                     <a class="nav-link" href="#home">Home</a>
                 </li>
@@ -48,6 +46,34 @@
         </div>
     </nav>
     <style>
+        body{
+            overflow-x:hidden;
+            font-size:16px
+        }
+        .navbar{
+            z-index:1;
+            padding: 3px;
+            position:fixed;
+            width:100%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            top: 0px;
+            opacity:1;
+            background-color: #FAFAFA;
+        }
+        .navbar-nav{
+            display:flex;
+            flex-direction:row;
+            justify-content:end;
+            text-decoration:none;
+            gap:1rem;
+            list-style: none;
+            top:0;
+        }
+        .navbar-brand{
+            font-weight:400;
+            margin-left:2rem;
+            text-decoration:none;
+        }
         .nav-link {
             color: black;
             font-weight: 600;
